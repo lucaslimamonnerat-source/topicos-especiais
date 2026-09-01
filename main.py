@@ -1,13 +1,13 @@
- def executar_ia_adivinhacao():
+def executar_ia_adivinhacao():
     print("=" * 55)
     print("      MINI-IA: ÁRVORE DE DECISÃO INTERATIVA      ")
     print("=" * 55)
-    print("Pense em um destes animais: LEÃO, TUBARÃO, ÁGUIA ou CACHORRO.")
+    print("Pense em um destes animais: LEÃO, TUBARÃO, ÁGUIA, CACHORRO OU TILÁPIA")
     print("Responda apenas com 's' (sim) ou 'n' (não).\n")
 
     # BASE DE CONHECIMENTO (Estrutura da Árvore de Decisão)
     arvore_conhecimento = {
-        "pergunta": "O animal vive na água?",
+        "pergunta": "O animal come peixes na água?",
         "sim": {
             "palpite": "Tubarão"
         },
@@ -22,8 +22,14 @@
                     "palpite": "Cachorro"
                 },
                 "nao": {
-                    "palpite": "Leão"
-                }
+                    "pergunta" : "O animal é um onívoro da água?",
+                "sim":{
+                    "palpite": "Tilápia"
+                },
+                "nao": {"palpite": "voce nao pensou em um dos animais da lista, logo o animal é voce"}
+
+                }, 
+                
             }
         }
     } 
