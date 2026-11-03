@@ -1,6 +1,3 @@
-Python
-
-
 import random
 
 posicao = 0

@@ -1,6 +1,3 @@
-Python
-
-
 # Dados de treino: (peso_em_kg, rotulo) -> 0 = Gato, 1 = Cachorro
 dados_treino = [(3.5, 0), (2.0, 0), (12.0, 1), (15.5, 1), (4.1, 0), (10.0, 1)]
 

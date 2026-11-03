@@ -1,6 +1,3 @@
-Python
-
-
 # Dados sem rótulo (ex: notas de provas da turma)
 notas = [45, 50, 48, 90, 85, 92, 12, 15, 10]
 
